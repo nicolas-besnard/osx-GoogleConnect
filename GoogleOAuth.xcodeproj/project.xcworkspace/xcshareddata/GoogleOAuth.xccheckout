@@ -6,19 +6,27 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3D3B30C8-5DD6-4E5C-AB4A-1FF7D9DF4152</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GoogleOAuth</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>130F48CA3C574B2606CD463BDA97641D4E2D7E4C</key>
+		<string>github.com:nicolas-besnard/osx-GoogleConnect.git</string>
 		<key>22754eea-fc93-e339-b032-c1f495b90c16++2896</key>
 		<string>http://gtm-oauth2.googlecode.com/svn/trunk/Source</string>
 		<key>b3aa69f0-f65c-a609-0a27-78855af037c1++2896</key>
 		<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GoogleOAuth.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>130F48CA3C574B2606CD463BDA97641D4E2D7E4C</key>
+		<string>../..</string>
 		<key>22754eea-fc93-e339-b032-c1f495b90c16++2896</key>
-		<string>OAuth2/</string>
+		<string>../..Source/OAuth2/</string>
 		<key>b3aa69f0-f65c-a609-0a27-78855af037c1++2896</key>
-		<string>HTTPFetcher/</string>
+		<string>../..Source/HTTPFetcher/</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -28,13 +36,21 @@
 		<string>http://gtm-http-fetcher.googlecode.com/svn</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
+	<string>github.com:nicolas-besnard/osx-GoogleConnect.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>b3aa69f0-f65c-a609-0a27-78855af037c1++2896</string>
+	<string>130F48CA3C574B2606CD463BDA97641D4E2D7E4C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>130F48CA3C574B2606CD463BDA97641D4E2D7E4C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GoogleOAuth</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>

@@ -12,7 +12,7 @@
 		371699951A9E507A00FAF2F1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371699931A9E507A00FAF2F1 /* MainMenu.xib */; };
 		371699A11A9E507A00FAF2F1 /* GoogleOAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371699A01A9E507A00FAF2F1 /* GoogleOAuthTests.swift */; };
 		371699BF1A9E517200FAF2F1 /* GTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371699B21A9E515600FAF2F1 /* GTL.framework */; };
-		371699C01A9E517200FAF2F1 /* GTL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371699B21A9E515600FAF2F1 /* GTL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		371699C01A9E517200FAF2F1 /* GTL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371699B21A9E515600FAF2F1 /* GTL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		371699C91A9E53B800FAF2F1 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371699C71A9E53B800FAF2F1 /* LoginWindowController.swift */; };
 		371699CA1A9E53B800FAF2F1 /* LoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371699C81A9E53B800FAF2F1 /* LoginWindowController.xib */; };
 /* End PBXBuildFile section */
@@ -443,6 +443,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GoogleOAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DGTL_BUILT_AS_FRAMEWORK=1",
+					"-DDEBUG=1",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GoogleOAuth/GoogleOAuth-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -457,6 +463,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GoogleOAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "-DGTL_BUILT_AS_FRAMEWORK=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GoogleOAuth/GoogleOAuth-Bridging-Header.h";
 			};
@@ -517,6 +525,7 @@
 				371699A61A9E507A00FAF2F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		371699A71A9E507A00FAF2F1 /* Build configuration list for PBXNativeTarget "GoogleOAuthTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				371699A91A9E507A00FAF2F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
