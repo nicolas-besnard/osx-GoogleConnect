@@ -15,6 +15,7 @@
 		371699C01A9E517200FAF2F1 /* GTL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371699B21A9E515600FAF2F1 /* GTL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		371699C91A9E53B800FAF2F1 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371699C71A9E53B800FAF2F1 /* LoginWindowController.swift */; };
 		371699CA1A9E53B800FAF2F1 /* LoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371699C81A9E53B800FAF2F1 /* LoginWindowController.xib */; };
+		A74423DE1A9E962100920214 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74423DD1A9E962100920214 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		371699C71A9E53B800FAF2F1 /* LoginWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 		371699C81A9E53B800FAF2F1 /* LoginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindowController.xib; sourceTree = "<group>"; };
 		371699CC1A9E55AC00FAF2F1 /* GoogleOAuth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleOAuth-Bridging-Header.h"; sourceTree = "<group>"; };
+		A74423DD1A9E962100920214 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74423DE1A9E962100920214 /* WebKit.framework in Frameworks */,
 				371699BF1A9E517200FAF2F1 /* GTL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +116,7 @@
 		371699811A9E507A00FAF2F1 = {
 			isa = PBXGroup;
 			children = (
+				A74423DD1A9E962100920214 /* WebKit.framework */,
 				371699AA1A9E515600FAF2F1 /* GTL.xcodeproj */,
 				3716998C1A9E507A00FAF2F1 /* GoogleOAuth */,
 				3716999D1A9E507A00FAF2F1 /* GoogleOAuthTests */,
@@ -517,6 +521,7 @@
 				371699A61A9E507A00FAF2F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		371699A71A9E507A00FAF2F1 /* Build configuration list for PBXNativeTarget "GoogleOAuthTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				371699A91A9E507A00FAF2F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

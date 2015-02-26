@@ -115,11 +115,9 @@ const char *kKeychainAccountName = "OAuth";
   }
 
   NSString *nibName = [[self class] authNibName];
-  NSString *nibPath = [bundle pathForResource:nibName
-                                       ofType:@"nib"];
-
-  self = [super initWithWindowNibPath:nibPath
-                                owner:self];
+  // Nouvelle methode pour load un nib;
+  self = [super initWithWindowNibName:nibName owner:self];
+    
   if (self != nil) {
     // use the supplied auth and OAuth endpoint URLs
     Class signInClass = [[self class] signInClass];
